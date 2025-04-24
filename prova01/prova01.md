@@ -1,4 +1,4 @@
-#Equipe:
+# Equipe:
 - Antônio Lopes de Freitas Neto
 - Gabriel do Nascimento
 - Isabella Caetano Spier
@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+```
 
 ## 2. MenuScreen
 
@@ -45,6 +46,7 @@ class MenuScreen extends StatefulWidget {
   @override
   State<MenuScreen> createState() => _MenuScreenState();
 }
+```
 
 ## 3. PaymentScreen
 
@@ -61,6 +63,7 @@ class PaymentScreen extends StatelessWidget {
 
   const PaymentScreen({Key? key, required this.item}) : super(key: key);
 }
+```
 
 ## 4. Scaffold (tela de pagamento)
 
@@ -90,6 +93,8 @@ Widget build(BuildContext context) {
     ),
   );
 }
+```
+
 ## 5. MenuScreenState
 
 **Descrição**:
@@ -106,6 +111,7 @@ class _MenuScreenState extends State<MenuScreen> {
   List<Map<String, dynamic>> filteredMenuItems = [];
   final List<Map<String, dynamic>> allMenuItems = [ /* Lista de itens */ ];
 }
+```
 
 ## 6. initState e FilterMenuItems
 
@@ -132,6 +138,7 @@ void filterMenuItems() {
     }).toList();
   });
 }
+```
 
 ## 7. build Scaffold
 
@@ -171,6 +178,7 @@ Widget build(BuildContext context) {
     ),
   );
 }
+```
 
 # Protótipo 2 - calculadora de IMC
 
@@ -194,6 +202,7 @@ class IMCCalculatorApp extends StatelessWidget {
     );
   }
 }
+```
 
 ## 2. IMCCalculatorPageState
 
@@ -209,6 +218,7 @@ class IMCCalculatorPage extends StatefulWidget {
   @override
   _IMCCalculatorPageState createState() => _IMCCalculatorPageState();
 }
+```
 
 ## 3. IMCCalculatorPageState
 
@@ -229,6 +239,7 @@ class _IMCCalculatorPageState extends State<IMCCalculatorPage> {
     // Retorna a classificação com base no IMC calculado.
   }
 }
+```
 
 ## 4. build Scaffold (calculadora de IMC)
 
@@ -256,6 +267,7 @@ Widget build(BuildContext context) {
     ),
   );
 }
+```
 
 ## 5. buildTableRow
 
@@ -281,3 +293,4 @@ TableRow _buildTableRow(String title, String value) {
     ],
   );
 }
+```
