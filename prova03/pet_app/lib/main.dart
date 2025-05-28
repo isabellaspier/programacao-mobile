@@ -14,9 +14,10 @@ class PetApp extends StatelessWidget {
       title: 'PetApp',
       theme: ThemeData(
         useMaterial3: true,
-        colorSchemeSeed: Colors.teal,
+        colorSchemeSeed: Colors.green.shade100,
       ),
       home: const PerfilPetScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
